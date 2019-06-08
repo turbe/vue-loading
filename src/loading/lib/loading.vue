@@ -25,6 +25,11 @@ export default {
 .loading-box {
   position: relative;
   text-align: center;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .loading-mask {
   position: fixed;
@@ -40,13 +45,10 @@ export default {
   position: fixed;
   left: 50%;
   top: 100px;
-  width: 110px;
-  min-height: 120px;
-  margin-left: -55px;
-  padding: 10px;
-  /* background: hsla(0,0%,7%,.7); */
+  width: 200px;
+  height: 100px;
+  margin-left: -100px;
   text-align: center;
-  border-radius: 5px;
   color: #fff;
   z-index: 5001;
 }
@@ -55,7 +57,6 @@ export default {
   height: 70px;
   vertical-align: baseline;
   display: inline-block;
-  margin: 10px 0 10px;;
   vertical-align: middle;
   animation: vueLoading 1s steps(12, end) infinite;
   background: transparent url("../../assets/loading200px.gif") no-repeat;

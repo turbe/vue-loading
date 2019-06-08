@@ -5,10 +5,13 @@ Vue.use(loading)
 new Vue({
   el: '#app',
   mounted () {
-    this.$loading.show({
-      el: document.body || document.documentElement,
-      text: '拼命加载...'
-    })
+    // this.$loading.show({
+    //   el: document.body || document.documentElement,
+    //   text: '拼命加载...'
+    // })
+    // this.$nextTick(()=>{
+    //   this.$loading.hide()
+    // })
   },
   render: h => h(App)
 })

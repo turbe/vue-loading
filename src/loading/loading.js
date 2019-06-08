@@ -14,6 +14,7 @@ let loading = {
   show (option = {}) {
     instance.show = true
     if (option) {
+      option.el.style.position = 'relative'
       option.el.appendChild(instance.$el)
       instance.text = option.text
     }

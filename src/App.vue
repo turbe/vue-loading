@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div ref="loadingArea" style="width:100%;height:300px"></div>
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -26,6 +27,13 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted () {
+    this.$loading.show({
+      el: this.$refs.loadingArea,
+      text:"loading area"
+    })
+
   }
 }
 </script>
