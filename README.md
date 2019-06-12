@@ -16,20 +16,16 @@ vue-loading 是通过自定义组件方式开发的一款简单的加载状态�
 
 * 注册
 
-
         vue.use(loading)
 * 使用 show()
 
-    
-
-    this.$loading.show({
-    	el: document.body || document.documentElement,
-    	text:"加载中..." // 可为空
-    })
+      this.$loading.show({
+        el: document.body || document.documentElement,
+        text:"加载中..." // 可为空
+      })
 
 * 使用 hide()
 
-
-    this.$loading.hide()
+      this.$loading.hide()
     
 
